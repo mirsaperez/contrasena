@@ -1,8 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 let passwordText = document.querySelector("#password");
-// Add event listener to generate button 
-// when the generate password button is clicked calls the function right password on line 5 
 generateBtn.addEventListener("click", () => {
   // ask user how long do they want there password
   let lengthSelection = prompt("how long do you want your password")
@@ -44,42 +42,7 @@ generateBtn.addEventListener("click", () => {
   // the range must be the same length as the generated password 
   for (let i = 0 ; i < lengthSelection ; i++) {
     var randomnumber = Math.floor(Math.random()*emptystring.length)
-    genpassword += emptystring[randomnumber] 
+    genpassword += emptystring[randomnumber]
   } 
   passwordText.innerHTML = genpassword;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
